@@ -1,0 +1,121 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: Arial;
+	background-color: white;
+}
+
+.navbar {
+	 background-color: #5161ce;
+	 overflow: hidden;
+	 height: 65px;
+	 border-radius: 8px;
+}
+
+p {
+		text-align: center;
+		font-family: verdana;
+		font-size:220%;
+}
+
+.navbar a {
+	 float: left;
+	 display: block;
+	 color: white;
+	 text-align: center;
+	 padding: 14px 16px;
+	 text-decoration: none;
+	 font-size: 18px;
+}
+
+.navbar ul {
+	margin: 8px 0 0 0;
+	list-style: none;
+}
+
+.navbar a:hover {
+	background-color: white;
+	transition: background-color .8s, color .3s;
+	color: #5161ce;
+	border-radius: 5px;
+}
+
+.memberTable {
+	padding-top:25px;
+	border-spacing: 0px;
+	border-radius: 5px;
+	margin :5px;
+	width:50%;
+	
+	
+}
+
+.memberTable thead tr th{
+	padding: 15px;
+	color: white;
+	background-color: #3f4eb0;
+	font-size:110%;
+}
+
+.memberTable tbody tr td {
+	padding: 13px;
+	font-size:105%;
+}
+
+.memberTable tr:nth-child(even) {
+	background-color: #e4e4e4;
+}
+
+.memberTable tr:nth-child(odd) {
+	background-color: white;
+}
+
+.actionBtn {
+	border-radius: 5px;
+ 	border: 1px solid #1c54b5;
+    padding: 10px;
+    color: #1c54b5;
+    width: 75px;
+    cursor: pointer;
+    background-color:white;
+    transition: background-color .5s, color .3s;
+}
+
+.actionBtn:hover  {
+	 background-color: #1c54b5;
+	 color: white;
+	 transition: background-color .8s, color .3s;
+}
+
+.searchTextField {
+	height: 35px;
+	border-radius: 5px;
+ 	border: 1px solid #1c54b5;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 3px;
+    
+}
+
+.inputTextField {
+	border-radius: 5px;
+ 	border: 1px solid #1c54b5;
+	height: 30px;
+	background-color:white;
+    margin:10px;
+    font-size:105%;
+}
+
+.loginForm {
+	background-color: #d5dbe4;
+	border-spacing: 15px;
+	padding: 10px;
+	margin-top:100px;
+}
+
+.welcome {
+	font-family:verdana;
+	font-size:120%;
+	
+}
