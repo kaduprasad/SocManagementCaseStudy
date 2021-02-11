@@ -1,0 +1,8 @@
+Error Code,Error Name
+01,Add Member Error
+02,Update Member Error
+03,Display MemberList Error
+04,Delete Member Error
+05,Search Member Error
+06, Establish Database connection Error
+07,close Database Connection Error

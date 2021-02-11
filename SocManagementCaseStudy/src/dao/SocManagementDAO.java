@@ -10,9 +10,8 @@ import org.apache.log4j.Logger;
 public class SocManagementDAO  {
 	public final static Logger logger = Logger.getLogger(DBUtil.class.getName());
 
-	public static List<SocMember> getAllMembers()
-	{
-		List<SocMember> memberList = new ArrayList<SocMember>();
+	public static List<SocMember> getAllMembers() throws DatabaseException {
+		List<SocMember> memberList = new ArrayList<>();
 		try {
 
 			Connection conn = DBUtil.getConnection();
@@ -23,19 +22,18 @@ public class SocManagementDAO  {
 				SocMember member = new SocMember(rs.getString("Flat_no"),rs.getString("Member_Name"),rs.getString("Owner_or_Tenant"),rs.getInt("Maintenance"));
 				memberList.add(member);
 			}
-			logger.debug("Fetched all members info successfully");
+			logger.debug("Fetch and Display all members");
 			DBUtil.closeConnection(conn);
 		}
 		catch(Exception e) {
 			logger.error("Error in Showing Members ",e);
-			e.printStackTrace();
+			throw new DatabaseException("Cannot fetch members List from database","03",e);
 		}
 		return memberList;
 	}
 	
 	
-	public static SocMember getMemberByFlatNo(String flatNo)
-	{
+	public static SocMember getMemberByFlatNo(String flatNo) throws DatabaseException {
 		SocMember member = null;
 		try {
 
@@ -47,20 +45,19 @@ public class SocManagementDAO  {
 
 				member = new SocMember(rs.getString("Flat_no"),rs.getString("Member_Name"),rs.getString("Owner_or_Tenant"),rs.getInt("Maintenance"));
 			}
-			logger.debug("Got MemberInfo");
+			logger.debug("Member info fetched of flat "+member.getFlatNo());
 
 		}
 		catch(Exception e) {
 
-			logger.error("Error in getting Member ",e);
-			e.printStackTrace();
+			logger.error("Error in getting Member for Editing ",e);
+			throw new DatabaseException("Error in getting Member from database",e);
 		}
 		return member;
 	}
 	
 	
-	public static int addMember(SocMember member)
-	{
+	public static int addMember(SocMember member) throws DatabaseException {
 		int status = 0;
 		try {
 
@@ -71,18 +68,17 @@ public class SocManagementDAO  {
 			ps.setString(3, member.getOwnership());
 			ps.setInt(4, member.getMaintenance());
 			status = ps.executeUpdate();
-			logger.debug("Added Member successfully");
+			logger.debug("Added Member successfully into database of flatNo "+member.getFlatNo());
 		}
 		catch(Exception e) {
 
-			logger.error("Error in adding Member ",e);
-			e.printStackTrace();
+			logger.error("Error in adding Member into database ",e);
+			throw new DatabaseException("Error : cannot Add member to database","01",e);
 		}
 		return status;
 	}
 	
-	public static int updateMember(SocMember member)
-	{
+	public static int updateMember(SocMember member) throws DatabaseException {
 		int status = 0;
 		try {
 
@@ -93,18 +89,17 @@ public class SocManagementDAO  {
 			ps.setInt(3, member.getMaintenance());
 			ps.setString(4, member.getFlatNo());
 			status = ps.executeUpdate();
-			logger.debug("Updated Member successfully");
+			logger.debug("Updated Member successfully and stored in database "+member.getFlatNo());
 
 		}
 		catch(Exception e) {
 			logger.error("Error in updating Member ",e);
-			e.printStackTrace();
+			throw new DatabaseException("Unable edit members from database","02",e);
 		}
 		return status;
 	}
 	
-	public static int deleteMember(String flatNo)
-	{
+	public static int deleteMember(String flatNo) throws DatabaseException {
 		int status = 0;
 		try{
 
@@ -112,12 +107,12 @@ public class SocManagementDAO  {
 			PreparedStatement ps= conn.prepareStatement("DELETE FROM society where Flat_no = ?");
 			ps.setString(1, flatNo);
 			status = ps.executeUpdate();
-			logger.debug("deleted Member ");
+			logger.debug("deleted specified Member of flat "+flatNo);
 		}
 		catch(Exception e) {
 
 			logger.error("Error in deleting Member ",e);
-			e.printStackTrace();
+			throw new DatabaseException("Unable to delete member from database","04",e);
 		}
 		return status;
 	}

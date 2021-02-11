@@ -1,0 +1,36 @@
+
+  DBUtil:26 - Admin validated
+  DBUtil:26 - Fetched all members info successfully
+  DBUtil:15 - validating admin at login
+  DBUtil:26 - Admin validated :prasad
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:112 - deleted specified Member of flat 109
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:15 - validating admin at login
+  DBUtil:26 - Admin validated :prasad
+  DBUtil:53 - Error in getting Member for Editing 
+
+  java.lang.NullPointerException
+	at dao.SocManagementDAO.getMemberByFlatNo(SocManagementDAO.java:48)
+	at org.apache.jsp.searchMember_jsp._jspService(searchMember_jsp.java:148)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.jasper.servlet.JspServletWrapper.service
+
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:48 - Member info fetched of flat 108
+  DBUtil:71 - Added Member successfully into database of flatNo 105
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:48 - Member info fetched of flat 101
+  DBUtil:93 - Updated Member successfully and stored in database 101
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:48 - Member info fetched of flat 102
+  DBUtil:93 - Updated Member successfully and stored in database 102
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:48 - Member info fetched of flat 103
+  DBUtil:93 - Updated Member successfully and stored in database 103
+  DBUtil:25 - Fetch and Display all members
+  DBUtil:48 - Member info fetched of flat 104
+  DBUtil:93 - Updated Member successfully and stored in database 104
+  DBUtil:25 - Fetch and Display all members
+  
