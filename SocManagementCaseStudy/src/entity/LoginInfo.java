@@ -5,9 +5,7 @@ public class LoginInfo {
 	String userName;
 	String password;
 	
-	public LoginInfo() {
-
-	}
+	public LoginInfo(){}
 	
 	public LoginInfo(String userName, String password) {
 		super();

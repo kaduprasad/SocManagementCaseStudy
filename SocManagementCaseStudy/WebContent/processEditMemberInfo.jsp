@@ -14,7 +14,7 @@ SocMember member = new SocMember(flatNo,memberName,ownership,maintenance);
 int status = SocManagementDAO.updateMember(member);
 if(status == 1)
 {
-	response.sendRedirect("viewProducts.jsp"); 
+	response.sendRedirect("viewMembers.jsp"); 
 }
 else
 {

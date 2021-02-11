@@ -5,7 +5,7 @@
 <%@page import="java.util.*"%>
 <html>
 <head>
-<title>View Products</title>
+<title>View Members</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>  
@@ -29,8 +29,8 @@
 				<td><%=member.getMemberName()%></td>
 				<td><%=member.getOwnership()%></td>
 				<td><%= member.getMaintenance() %></td>
-			<td><button class="actionBtn" onclick="location.href = 'editMemberInfo.jsp?prodId=<%= member.getFlatNo()%>';">Edit</button></td>
-			<td><button class="actionBtn" onclick="location.href = 'processDeleteMember.jsp?prodId=<%= member.getFlatNo()%>';">Delete</button></td>
+			<td><button class="actionBtn" onclick="location.href = 'editMemberInfo.jsp?flatNo=<%= member.getFlatNo()%>';">Edit</button></td>
+			<td><button class="actionBtn" onclick="location.href = 'processDeleteMember.jsp?flatNo=<%= member.getFlatNo()%>';">Delete</button></td>
 		</tr>
 
 		<%

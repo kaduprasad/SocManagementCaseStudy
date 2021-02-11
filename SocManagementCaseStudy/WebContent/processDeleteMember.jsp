@@ -3,6 +3,7 @@
 
 <%
 String flatNo = request.getParameter("flatNo");
+System.out.print(flatNo);
 
 int status = SocManagementDAO.deleteMember(flatNo);
 if(status == 1) {

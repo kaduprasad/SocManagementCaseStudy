@@ -7,9 +7,7 @@ public class SocMember {
 	String ownership;
 	Integer maintenance;
 	
-	public SocMember() {
-		
-	}
+	public SocMember() {}
 
 	public SocMember(String flatNo, String memberName, String ownership, Integer maintenance) {
 		super();

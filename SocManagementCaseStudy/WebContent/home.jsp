@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Home</title>
-<p> Society Management System</p>
+<p> Society Management System </p>
 </head>
 
 <body>

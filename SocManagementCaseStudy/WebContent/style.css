@@ -1,8 +1,9 @@
-@CHARSET "ISO-8859-1";
+
 
 body {
 	font-family: Arial;
 	background-color: white;
+	background-image: url("bg.jpg");
 }
 
 .navbar {
@@ -13,9 +14,11 @@ body {
 }
 
 p {
-		text-align: center;
-		font-family: verdana;
-		font-size:220%;
+	text-align: center;
+	color:white;
+	font-family: verdana;
+	font-size:220%;
+	margin-top:60px;
 }
 
 .navbar a {
@@ -43,8 +46,8 @@ p {
 .memberTable {
 	padding-top:25px;
 	border-spacing: 0px;
-	border-radius: 5px;
-	margin :5px;
+	border-radius: 10px;
+	margin :auto;
 	width:50%;
 	
 	
@@ -116,6 +119,11 @@ p {
 
 .welcome {
 	font-family:verdana;
-	font-size:120%;
+	font-size:140%;
+	color:white;
+	background-color: cyan;
+	padding: 18px 25px;
+	border-radius: 10px;
+	opacity:0.85;
 	
 }

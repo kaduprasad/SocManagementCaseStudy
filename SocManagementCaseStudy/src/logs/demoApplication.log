@@ -1,0 +1,58 @@
+  2020-07-25 20:59 WARN  LogTesting:72 - Warning for error
+  2020-07-25 20:59 ERROR LogTesting:77 - error in finally block
+  2020-07-25 21:45 DEBUG LogTesting:20 -  debug point at checkNullPointerException() 
+  2020-07-25 21:45 DEBUG LogTesting:46 -  debug point at checkMultipleCatchExceptions() 
+  2020-07-25 22:16 ERROR LogTesting:20 - Caught NullPointer Exception 
+  java.lang.NullPointerException
+	at GeneralException.checkNullPointerException(GeneralException.java:16)
+	at GeneralException.main(GeneralException.java:112)
+2020-07-25 22:16 ERROR LogTesting:124 - Add member problem11200
+  CsvGenerationException: Error adding member
+	at GeneralException.addMember(GeneralException.java:92)
+	at GeneralException.main(GeneralException.java:122)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addMember(GeneralException.java:86)
+	... 1 more
+2020-07-25 22:16 ERROR LogTesting:129 - Add member problem11201
+  CsvGenerationException: Error adding soc
+	at GeneralException.addSociety(GeneralException.java:105)
+	at GeneralException.main(GeneralException.java:127)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addSociety(GeneralException.java:99)
+	... 1 more
+2020-07-25 22:17 ERROR LogTesting:20 - Caught NullPointer Exception 
+  java.lang.NullPointerException
+	at GeneralException.checkNullPointerException(GeneralException.java:16)
+	at GeneralException.main(GeneralException.java:112)
+2020-07-25 22:17 ERROR LogTesting:124 - Add member problem11200
+  CsvGenerationException: Error adding member
+	at GeneralException.addMember(GeneralException.java:92)
+	at GeneralException.main(GeneralException.java:122)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addMember(GeneralException.java:86)
+	... 1 more
+2020-07-25 22:17 ERROR LogTesting:129 - Add member problem11201
+  CsvGenerationException: Error adding soc
+	at GeneralException.addSociety(GeneralException.java:105)
+	at GeneralException.main(GeneralException.java:127)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addSociety(GeneralException.java:99)
+	... 1 more
+2020-07-25 22:18 ERROR LogTesting:20 - Caught NullPointer Exception 
+  java.lang.NullPointerException
+	at GeneralException.checkNullPointerException(GeneralException.java:16)
+	at GeneralException.main(GeneralException.java:112)
+2020-07-25 22:18 ERROR LogTesting:124 - Add member problem 11200
+  CsvGenerationException: Error adding member
+	at GeneralException.addMember(GeneralException.java:92)
+	at GeneralException.main(GeneralException.java:122)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addMember(GeneralException.java:86)
+	... 1 more
+2020-07-25 22:18 ERROR LogTesting:129 - Add society problem 11201
+  CsvGenerationException: Error adding soc
+	at GeneralException.addSociety(GeneralException.java:105)
+	at GeneralException.main(GeneralException.java:127)
+Caused by: CsvGenerationException: This is CsvGenreationException
+	at GeneralException.addSociety(GeneralException.java:99)
+	... 1 more
