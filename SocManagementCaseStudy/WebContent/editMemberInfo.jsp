@@ -2,7 +2,6 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="dao.SocManagementDAO"%>
 <%@page import="entity.SocMember"%>
-<%@page import="java.util.*"%>
 <html>
 <head>
 

@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@page import="dao.SocManagementDAO"%>
-<%@page import="entity.SocMember"%>
 <%@page import="java.util.*"%>
 <html>
 <head>
@@ -32,8 +31,13 @@
 				</tr>
 				<tr>
 					<td>Ownership</td>
-					<td><input type="text" name="ownership" size="20"
-						class="inputTextField" /></td>
+					<td>
+<%--						<input type="text" name="ownership" size="20"--%>
+<%--						class="inputTextField" />--%>
+						<select class="dropDown" name="ownership" style="width:190px;">
+							<option value="Owner">Owner</option>
+							<option value="Tenant">Tenant</option>
+						</select></td>
 				</tr>
 				<tr>
 					<td>Maintenance</td>

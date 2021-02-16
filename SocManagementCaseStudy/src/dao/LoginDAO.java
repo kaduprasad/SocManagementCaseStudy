@@ -28,7 +28,7 @@ public class LoginDAO {
 			DBUtil.closeConnection(conn); // closed connection
 		}
 		catch(Exception e) {
-
+		
 			logger.debug("Admin cannot be validated : "+userDetails.getUserName());
 			e.printStackTrace();
 		}

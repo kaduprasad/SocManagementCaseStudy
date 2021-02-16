@@ -22,7 +22,7 @@ public class DBUtil {
 		}
 		catch(Exception e) {
 			logger.error("Error occurred while establishing DB connection ",e);
-			throw new DatabaseConnectException("Unable to delete member from database","06",e);
+			throw new DatabaseConnectException("Unable to connect database","06",e);
 		}
 		return connection;
 	}
@@ -32,8 +32,8 @@ public class DBUtil {
 		try {
 			conn.close();
 		} catch (SQLException e) {
-			logger.error("Error occurred while closing member DB connection",e);
-			throw new DatabaseConnectException("Unable to delete member from database","07",e);
+			logger.error("Error occurred while closing  DB connection",e);
+			throw new DatabaseConnectException("Unable to connect from database","07",e);
 		}
 	}
 }

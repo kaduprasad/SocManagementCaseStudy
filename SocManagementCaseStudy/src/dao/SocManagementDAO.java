@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.*;
 import dbutil.DBUtil;
 import entity.SocMember;
+import entity.Society;
 import exceptions.databaseExceptions.DatabaseException;
 import org.apache.log4j.Logger;
 
@@ -116,4 +117,10 @@ public class SocManagementDAO  {
 		}
 		return status;
 	}
+
+	public int getMemberCount() throws DatabaseException {
+		List<SocMember> memberList = SocManagementDAO.getAllMembers();
+		return memberList.size();
+	}
+
 }
