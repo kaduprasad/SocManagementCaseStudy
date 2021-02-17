@@ -33,7 +33,7 @@ public class DBUtil {
 			conn.close();
 		} catch (SQLException e) {
 			logger.error("Error occurred while closing  DB connection",e);
-			throw new DatabaseConnectException("Unable to connect from database","07",e);
+			throw new DatabaseConnectException("Unable to disconnect database","07",e);
 		}
 	}
 }
