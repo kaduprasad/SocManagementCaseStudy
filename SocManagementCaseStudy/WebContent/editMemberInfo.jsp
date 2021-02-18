@@ -4,8 +4,8 @@
 <%@page import="entity.SocMember"%>
 <html>
 <head>
-
-<title>Edit Member</title>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Edit Member</title>
 </head>
 <body>
 	<%@ include file="header.jsp" %>
@@ -36,8 +36,12 @@
 				</tr>
 				<tr>
 					<td>Ownership</td>
-					<td><input type="text" name="ownership" size="20"
-							   value="<%=member.getOwnership()%>" class="inputTextField"/></td>
+					<td>
+						<select class="dropDown" name="ownership" value="<%=member.getOwnership()%>" style="width:190px;">
+							<option value="Owner">Owner</option>
+							<option value="Tenant">Tenant</option>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>Maintenance</td>

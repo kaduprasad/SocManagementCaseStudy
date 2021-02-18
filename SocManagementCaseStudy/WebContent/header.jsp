@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<%

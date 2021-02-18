@@ -5,8 +5,8 @@
 <%@ page import="entity.Society" %>
 <html>
 <head>
-
-<title>Edit SocietyInfo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Edit SocietyInfo</title>
 </head>
 <body>
 	<%@ include file="header.jsp" %>

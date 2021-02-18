@@ -9,13 +9,14 @@ import dbutil.DBUtil;
 import org.apache.log4j.Logger;
 
 public class LoginDAO {
+	
 	public final static Logger logger = Logger.getLogger(DBUtil.class.getName());
 
 	public static boolean isUserValid(LoginInfo userDetails)
-	{	logger.info("validating admin at login");
+	{	
+		logger.info("validating admin at login");
 		boolean validStatus = false;
 		try {
-
 			Connection conn = DBUtil.getConnection();
 			Statement st= conn.createStatement();
 			ResultSet rs= st.executeQuery("SELECT * FROM login_info WHERE username = '"+userDetails.getUserName()+"' AND password = '"+userDetails.getPassword()+"'");

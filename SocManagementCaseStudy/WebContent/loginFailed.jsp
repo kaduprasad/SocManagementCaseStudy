@@ -2,7 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <html>
 <head>
-<title>Insert title here</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Failed</title>
 </head>
 <body>
 <body>

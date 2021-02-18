@@ -2,11 +2,13 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="dao.SocManagementDAO"%>
 <%@page import="java.util.*"%>
+
 <html>
 <head>
 <title>Add Member</title>
 </head>
 <body>
+<link rel="stylesheet" href="css/style.css">
 	<%@ include file="header.jsp" %>
 
 	<div align="center">
@@ -32,12 +34,11 @@
 				<tr>
 					<td>Ownership</td>
 					<td>
-<%--						<input type="text" name="ownership" size="20"--%>
-<%--						class="inputTextField" />--%>
 						<select class="dropDown" name="ownership" style="width:190px;">
 							<option value="Owner">Owner</option>
 							<option value="Tenant">Tenant</option>
-						</select></td>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>Maintenance</td>

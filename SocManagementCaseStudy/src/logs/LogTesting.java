@@ -7,7 +7,5 @@ public class LogTesting {
 
     public static void main(String[] args) {
         PropertyConfigurator.configure("D:\\android studio learning\\SocManagementCaseStudy\\properties\\log4j.properties");
-
-        logger.debug("This is Debugger msg");
     }
 }

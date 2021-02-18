@@ -6,7 +6,8 @@
 <%@ page import="entity.Society" %>
 <html>
 <head>
-<title>View SocietyInfo</title>
+    <link rel="stylesheet" href="css/style.css">
+	<title>View SocietyInfo</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>  
@@ -28,17 +29,16 @@
 
 			for (Society society : societyList) {
 		%>
-		<tr>
-			<td><%=society.getSocName()%></td>
-			<td><%=society.getAddress()%></td>
-			<td><%=society.getCity()%></td>
-			<td><%=noOfFlats%></td>
-			<td><button class="actionBtn" onclick="location.href = 'editSocietyInfo.jsp?socName=<%= society.getSocName()%>';">Edit</button></td>
-		</tr>
-
+			<tr>
+				<td><%=society.getSocName()%></td>
+				<td><%=society.getAddress()%></td>
+				<td><%=society.getCity()%></td>
+				<td><%=noOfFlats%></td>
+				<td><button class="actionBtn" onclick="location.href = 'editSocietyInfo.jsp?socName=<%= society.getSocName()%>';">Edit</button></td>
+			</tr>
 		<%
-}
-%>
+			}
+		%>
 	</table>
 </body>
 </html>
